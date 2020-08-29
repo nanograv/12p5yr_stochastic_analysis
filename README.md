@@ -1,4 +1,4 @@
-# dwg_tutorials
+# NANOGrav 12.5yr Stochastic Analysis Materials
 
 <!--[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nanograv/dwg_tutorials/master)-->
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
