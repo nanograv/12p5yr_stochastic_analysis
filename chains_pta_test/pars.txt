@@ -1,0 +1,4 @@
+J1713+0747_red_noise_gamma
+J1713+0747_red_noise_log10_A
+gw_log10_A
+nmodel
