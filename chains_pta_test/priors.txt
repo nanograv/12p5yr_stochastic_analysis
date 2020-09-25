@@ -1,3 +1,0 @@
-J1713+0747_red_noise_gamma:Uniform(pmin=0, pmax=7)
-J1713+0747_red_noise_log10_A:LinearExp(pmin=-20, pmax=-11)
-gw_log10_A:Uniform(pmin=-18, pmax=-14)
