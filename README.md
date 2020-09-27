@@ -1,7 +1,7 @@
 # NANOGrav_12yr_tutorial
 ## Tutorial to go with the 12.5 year GWB analysis
  
- Authors: Steve Taylor, Sarah Vigeland, Aaron Johnson
+ Authors: [Stephen Taylor](http://stevertaylor.github.io/), Sarah Vigeland, Aaron Johnson
 
  Please send questions about this tutorial to `aaron.johnson (at) nanograv.org`
  
