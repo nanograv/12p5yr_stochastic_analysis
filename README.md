@@ -1,4 +1,4 @@
-# NANOGrav_12yr_tutorial
+# NANOGrav_12yr_tutorial <img align="right" width="150" height="100" src="https://github.com/nanograv/12p5yr_stochastic_analysis/blob/master/nanograv.png?raw=true">
 ## Tutorial to go with the 12.5 year GWB analysis
  
  Authors: [Stephen Taylor](http://stevertaylor.github.io/), Sarah Vigeland, Aaron Johnson
