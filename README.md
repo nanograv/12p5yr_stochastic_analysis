@@ -6,7 +6,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Generic badge](https://img.shields.io/twitter/follow/NANOGrav?style=social)](https://twitter.com/NANOGrav)
  
- Authors: [Stephen Taylor](http://stevertaylor.github.io/), Sarah Vigeland, Aaron Johnson
+ Authors: [Stephen Taylor](http://stevertaylor.github.io/), [Sarah Vigeland](https://github.com/svigeland), Joe Simon, [Bence Becsy](https://github.com/bencebecsy) and [Aaron Johnson](https://github.com/AaronDJohnson) for the [NANOGrav Collaboration](https://github.com/nanograv)
 
  Please send questions about this tutorial to `aaron.johnson (at) nanograv.org`
  
@@ -28,9 +28,9 @@
 		* `bash Miniconda3-latest-Linux-x86_64.sh -b`
 		* `rm Miniconda3-latest-Linux-x86_64.sh` (careful with “rm”)
 
-2. To install a new environment from a yml file: `conda env create --file environment.yml`
+2. To install a new environment from a yml file: `conda env create --name enterprise --file enterprise.yml`
 
-3. This will create a conda environment that can be activated by `conda activate pta_software`
+3. This will create a conda environment that can be activated by `conda activate enterprise`
 
 4. After activating install `nb_conda` by `conda install nb_conda`
 
@@ -38,5 +38,5 @@
 
 6. Set the Kernel
 
-   * when opening a new notebook: click `New` and select `Python [conda env:pta_software]`  
-   * when opening an existing notebook (like this tutorial): click `Kernel` --> `Change Kernel` --> `Python [conda env:pta_software]`  
+   * when opening a new notebook: click `New` and select `Python [conda env:enterprise]`  
+   * when opening an existing notebook (like this tutorial): click `Kernel` --> `Change Kernel` --> `Python [conda env:enterprise]`  

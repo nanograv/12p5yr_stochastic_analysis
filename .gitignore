@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# mac filesystem
+.DS_Store
+
 # C extensions
 *.so
 
@@ -127,3 +130,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# downloaded chains
+/downloaded_chains
+/chains_pta_test
+/data/chains_pta_test
+
+# Figures
+Figure1.png
+Figure2.png
