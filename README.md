@@ -28,15 +28,19 @@
 		* `bash Miniconda3-latest-Linux-x86_64.sh -b`
 		* `rm Miniconda3-latest-Linux-x86_64.sh` (careful with “rm”)
 
-2. To install a new environment from a yml file: `conda env create --name enterprise --file enterprise.yml`
+2. Make sure you have compiler tools for Mac or Linux (Windows is currently not supported)
+	* For Mac: in a terminal run `xcode-select --install` to install command line tools
+	* For Linux: in a terminal run `apt-get install gcc g++ gfortran`
 
-3. This will create a conda environment that can be activated by `conda activate enterprise`
+3. To install a new environment from a yml file: `conda env create -f environment.yml`
 
-4. After activating install `nb_conda` by `conda install nb_conda`
+4. This will create a conda environment that can be activated by `conda activate enterprise`
 
-5. Open a `jupyter notebook`
+5. After activating install `nb_conda` by `conda install nb_conda`
 
-6. Set the Kernel
+6. Open a `jupyter notebook`
+
+7. Set the Kernel
 
    * when opening a new notebook: click `New` and select `Python [conda env:enterprise]`  
    * when opening an existing notebook (like this tutorial): click `Kernel` --> `Change Kernel` --> `Python [conda env:enterprise]`  

@@ -133,8 +133,7 @@ dmypy.json
 
 # downloaded chains
 /downloaded_chains
-/chains_pta_test
-/data/chains_pta_test
+/chains*
 
 # Figures
 Figure1.png
