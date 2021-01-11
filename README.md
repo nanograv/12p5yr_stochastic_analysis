@@ -9,10 +9,6 @@
  Authors: [Stephen Taylor](http://stevertaylor.github.io/), [Sarah Vigeland](https://github.com/svigeland), Joe Simon, [Bence Becsy](https://github.com/bencebecsy) and [Aaron Johnson](https://github.com/AaronDJohnson) for the [NANOGrav Collaboration](https://github.com/nanograv)
 
  Please send questions about this tutorial to `aaron.johnson (at) nanograv.org`
- 
- If you are interested in working through this notebook, but do not want to install the software, we have prepared a related Google Colab notebook: https://colab.research.google.com/drive/1xft6F9nyoEHUVn1LbW-0qgXiiKDJuR3X#scrollTo=7kVh83a8w36s
-
- By copying this notebook, you can install the software to your own Google account and run the software without installation on your computer.
 
 ## Installing PTA software
 
