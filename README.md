@@ -44,14 +44,22 @@
 
 ## Tutorials
 
-### Single Pulsar GWB Analysis [Google Colab](https://colab.research.google.com/drive/1sBALRUi6wCykAAKH8Lp5TdS69QUmNgZq#scrollTo=t1FXF9NO5HpG)
-	This tutorial is meant to be a quick introduction for those who don't have time to run the computations required in the full pulsar timing array (PTA) gravitational wave background (GWB) analysis. We go through the Bayesian analysis of `J1909` and `J1713`. These are two of the longest timed pulsars in the NANOGrav data set. One of the pulsars supports the GWB, while the other does not.
+### Single Pulsar GWB Analysis 
+  * [Google Colab](https://colab.research.google.com/drive/1sBALRUi6wCykAAKH8Lp5TdS69QUmNgZq#scrollTo=t1FXF9NO5HpG)
 
-### White Noise Single Pulsar Analysis [Google Colab](https://colab.research.google.com/drive/11aRVepxn_whRm_JWCbgL_sVqn1hjo9Ik?usp=sharing)
-	Here we go through the Bayesian analysis of white noise on a single pulsar. This is done for every pulsar in the NANOGrav data set to find the most likely values of each white noise parameter. These are then set to their most likely value in the full GWB analysis to reduce the computational time required for a full analysis.
+  This tutorial is meant to be a quick introduction for those who don't have time to run the computations required in the full pulsar timing array (PTA) gravitational wave background (GWB) analysis. We go through the Bayesian analysis of `J1909` and `J1713`. These are two of the longest timed pulsars in the NANOGrav data set. One of the pulsars supports the GWB, while the other does not.
 
-### PTA GWB Analysis [Google Colab](https://colab.research.google.com/drive/1dwZ7ihDtpah9ATiPx2SJIWNYt9YJkQvF?usp=sharing)
-	In this tutorial, we work through the Bayesian analysis of a subset of pulsars in the NANOGrav data set (those timed for more than 6 years). After going through a generalized process of the single pulsar GWB analysis, we show how to compare models and compute Bayes factors. Figures 1, 2, and part of 3 of the 12.5 year stochastic background paper are reproduced in this notebook.
+### White Noise Single Pulsar Analysis 
+  * [Google Colab](https://colab.research.google.com/drive/11aRVepxn_whRm_JWCbgL_sVqn1hjo9Ik?usp=sharing)
 
-### Optimal Statistic Analysis [Google Colab](https://colab.research.google.com/drive/1VNLbutN7cKJM2jl6LId0IgkGJDszDloC#scrollTo=bwMNlFWuQhnB)
-	This tutorial gives an introduction to frequentist methods we can use to look for the stochastic gravitational-wave background. It calculates the optimal statistic using the maximum likelihood noise parameters and also the noise marginalized optimal statistic using the noise parameter posteriors from a Bayesian analysis. It reproduces Figure 4 and 5 of the stochastic background paper.
+  Here we go through the Bayesian analysis of white noise on a single pulsar. This is done for every pulsar in the NANOGrav data set to find the most likely values of each white noise parameter. These are then set to their most likely value in the full GWB analysis to reduce the computational time required for a full analysis.
+
+### PTA GWB Analysis 
+  * [Google Colab](https://colab.research.google.com/drive/1dwZ7ihDtpah9ATiPx2SJIWNYt9YJkQvF?usp=sharing)
+  
+  In this tutorial, we work through the Bayesian analysis of a subset of pulsars in the NANOGrav data set (those timed for more than 6 years). After going through a generalized process of the single pulsar GWB analysis, we show how to compare models and compute Bayes factors. Figures 1, 2, and part of 3 of the 12.5 year stochastic background paper are reproduced in this notebook.
+
+### Optimal Statistic Analysis 
+  * [Google Colab](https://colab.research.google.com/drive/1VNLbutN7cKJM2jl6LId0IgkGJDszDloC#scrollTo=bwMNlFWuQhnB)
+	
+  This tutorial gives an introduction to frequentist methods we can use to look for the stochastic gravitational-wave background. It calculates the optimal statistic using the maximum likelihood noise parameters and also the noise marginalized optimal statistic using the noise parameter posteriors from a Bayesian analysis. It reproduces Figure 4 and 5 of the stochastic background paper.
