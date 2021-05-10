@@ -133,7 +133,7 @@ dmypy.json
 
 # downloaded chains
 /downloaded_chains
-/chains*
+/chains/downloaded_chains
 
 # Figures
 Figure1.png
@@ -142,5 +142,7 @@ Figure2.png
 # pickle files
 *.pkl
 
-# backup chains
+# backup chains / sampling scripts
 backup*
+/sampling_scripts/
+/chains*
