@@ -138,3 +138,9 @@ dmypy.json
 # Figures
 Figure1.png
 Figure2.png
+
+# pickle files
+*.pkl
+
+# backup chains
+backup*
