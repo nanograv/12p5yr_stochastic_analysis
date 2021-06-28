@@ -1,6 +1,26 @@
 # includes matplotlib settings and small functions to
 # make the other notebooks look a little shorter
 
+import numpy as np
+import scipy.stats as sps
+
+
+def fd_rule(chain):
+    """
+    Freedman-Diaconus rule to find optimal bin width
+    """
+    return 2 * sps.iqr(chain) / (len(chain))**(1/3)
+
+
+def fd_bins(chain, logAmin=-20, logAmax=-12):
+    """
+    Get bins for use with histograms using the FD rule
+    """
+    width = fd_rule(chain)
+    bins = np.arange(logAmin, logAmax, width)
+    return bins
+
+
 def matplotsettings():
     ## Plotting Parameters For matplotlib
     def figsize(scale):
