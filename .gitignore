@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+/chains_mortimer/
 
 # mac filesystem
 .DS_Store
@@ -145,4 +146,3 @@ Figure2.png
 # backup chains / sampling scripts
 backup*
 /sampling_scripts/
-/chains*

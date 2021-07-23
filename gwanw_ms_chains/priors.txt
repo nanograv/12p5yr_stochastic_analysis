@@ -1,0 +1,3 @@
+J1909-3744_red_noise_gamma:Uniform(pmin=0, pmax=7)
+J1909-3744_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)
+gw_log10_A:Uniform(pmin=-18, pmax=-14)

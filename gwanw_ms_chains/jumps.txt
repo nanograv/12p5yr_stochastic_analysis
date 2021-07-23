@@ -1,0 +1,8 @@
+draw_from_red_prior 0.065
+draw_from_gw_log10_A_prior 0.065
+covarianceJumpProposalAM 0.097
+draw_from_gwb_log_uniform_distribution 0.065
+DEJump 0.32
+draw_from_nmodel_prior 0.16
+draw_from_prior 0.032
+covarianceJumpProposalSCAM 0.19
