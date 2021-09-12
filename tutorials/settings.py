@@ -3,6 +3,7 @@
 
 import numpy as np
 import scipy.stats as sps
+import matplotlib.pyplot as plt
 
 
 def fd_rule(chain):
@@ -21,17 +22,18 @@ def fd_bins(chain, logAmin=-20, logAmax=-12):
     return bins
 
 
+def figsize(scale):
+    fig_width_pt = 513.17 #469.755    # Get this from LaTeX using \the\textwidth
+    inches_per_pt = 1.0 / 72.27         # Convert pt to inch
+    golden_mean = (np.sqrt(5.0)-1.0)/2.0    # Aesthetic ratio
+    fig_width = fig_width_pt * inches_per_pt * scale  # width in inches
+    fig_height = fig_width * golden_mean              # height in inches
+    fig_size = [fig_width, fig_height]
+    return fig_size
+
+
 def matplotsettings():
     ## Plotting Parameters For matplotlib
-    def figsize(scale):
-        fig_width_pt = 513.17 #469.755    # Get this from LaTeX using \the\textwidth
-        inches_per_pt = 1.0 / 72.27         # Convert pt to inch
-        golden_mean = (np.sqrt(5.0)-1.0)/2.0    # Aesthetic ratio
-        fig_width = fig_width_pt * inches_per_pt * scale  # width in inches
-        fig_height = fig_width * golden_mean              # height in inches
-        fig_size = [fig_width, fig_height]
-        return fig_size
-
     plt.rcParams.update(plt.rcParamsDefault)
     params = {'backend': 'pdf',
             'axes.labelsize': 10,
