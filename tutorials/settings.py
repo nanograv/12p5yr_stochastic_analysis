@@ -4,6 +4,59 @@
 import numpy as np
 import scipy.stats as sps
 import matplotlib.pyplot as plt
+import glob, pickle, os
+from enterprise.pulsar import Pulsar
+
+
+def load_pulsars(datadir, PINT=False, ephemeris='DE438', save=False):
+    """
+    This is specific to the file structure used in this tutorial.
+    If you use a different file structure, this function will need to be modified!
+    """
+    psrlist = None # define a list of pulsar name strings that can be used to filter.
+    # set the data directory
+    datadir = './data'
+    # for the entire pta
+    parfiles = sorted(glob.glob(datadir + '/par/*par'))
+    timfiles = sorted(glob.glob(datadir + '/tim/*tim'))
+
+    if not parfiles or not timfiles:
+        print('Check that your data directory exists and has the right folder structure.')
+        print('If you interupted this function, you may have to reset the kernel and try again.')
+
+    # filter
+    if psrlist is not None:
+        parfiles = [x for x in parfiles if x.split('/')[-1].split('.')[0] in psrlist]
+        timfiles = [x for x in timfiles if x.split('/')[-1].split('.')[0] in psrlist]
+
+    # Make sure you use the tempo2 parfile for J1713+0747!!
+    # ...filtering out the tempo parfile... 
+    if PINT:
+        parfiles = [x for x in parfiles if 'J1713+0747_NANOGrav_12yv3.gls.t2.par' not in x]
+    else:
+        parfiles = [x for x in parfiles if 'J1713+0747_NANOGrav_12yv3.gls.par' not in x]
+    # check for file and load pickle if it exists:
+    pickle_loc = datadir + '/psrs.pkl'
+    if os.path.exists(pickle_loc):
+        with open(pickle_loc, 'rb') as f:
+            psrs = pickle.load(f)
+        return psrs
+
+    # else: load them in slowly:
+    else:
+        psrs = []
+        for p, t in zip(parfiles, timfiles):
+            if PINT:
+                psr = Pulsar(p, t, ephem=ephemeris, timing_package='PINT')
+            else:
+                psr = Pulsar(p, t, ephem=ephemeris)
+            psrs.append(psr)
+        if save:
+            # Make your own pickle of these loaded objects to reduce load times significantly
+            # at the cost of some space on your computer (~1.8 GB).
+            with open(datadir + '/psrs.pkl', 'wb') as f:
+                pickle.dump(psrs, f)
+        return psrs
 
 
 def fd_rule(chain):

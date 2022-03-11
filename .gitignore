@@ -7,6 +7,9 @@ __pycache__/
 # mac filesystem
 .DS_Store
 
+# VSCode
+.vscode
+
 # C extensions
 *.so
 
@@ -141,8 +144,9 @@ Figure1.png
 Figure2.png
 
 # pickle files
-*.pkl
+psrs.pkl
 
 # backup chains / sampling scripts
 backup*
 /sampling_scripts/
+/tutorials/output/
