@@ -14,8 +14,6 @@ def load_pulsars(datadir, PINT=False, ephemeris='DE438', save=False):
     If you use a different file structure, this function will need to be modified!
     """
     psrlist = None # define a list of pulsar name strings that can be used to filter.
-    # set the data directory
-    datadir = './data'
     # for the entire pta
     parfiles = sorted(glob.glob(datadir + '/par/*par'))
     timfiles = sorted(glob.glob(datadir + '/tim/*tim'))
