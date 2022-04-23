@@ -1,0 +1,75 @@
+system : Darwin
+node : Aarons-MBP.attlocal.net
+release : 21.3.0
+version : Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_ARM64_T6000
+machine : x86_64
+
+enterprise_extensions v2.4.0
+model 0
+=========
+
+enterprise v3.3.1,  Python v3.9.12
+==========================================================================================
+
+Signal Name                              Signal Class                   no. Parameters      
+==========================================================================================
+J1713+0747_marginalizing_linear_timing_model TimingModel                    0                   
+
+params:
+__________________________________________________________________________________________
+J1713+0747_red_noise                     FourierBasisGP                 2                   
+
+params:
+J1713+0747_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
+J1713+0747_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
+__________________________________________________________________________________________
+J1713+0747_gw                            FourierBasisGP                 1                   
+
+params:
+gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
+gw_gamma:Constant=4.333333333333333                                                       
+__________________________________________________________________________________________
+J1713+0747_measurement_noise             MeasurementNoise               0                   
+
+params:
+J1713+0747_L-wide_ASP_efac:Constant=1.0524302344416032                                    
+J1713+0747_L-wide_PUPPI_efac:Constant=0.9796026604137508                                  
+J1713+0747_Rcvr1_2_GASP_efac:Constant=1.084307149708116                                   
+J1713+0747_Rcvr1_2_GUPPI_efac:Constant=1.017213088587959                                  
+J1713+0747_Rcvr_800_GASP_efac:Constant=1.117529091199639                                  
+J1713+0747_Rcvr_800_GUPPI_efac:Constant=1.0500383710337968                                
+J1713+0747_S-wide_ASP_efac:Constant=1.1139598766607257                                    
+J1713+0747_S-wide_PUPPI_efac:Constant=1.0889710082237398                                  
+__________________________________________________________________________________________
+J1713+0747_tnequad                       TNEquadNoise                   0                   
+
+params:
+J1713+0747_L-wide_ASP_log10_tnequad:Constant=-7.58206720746206                            
+J1713+0747_L-wide_PUPPI_log10_tnequad:Constant=-8.377098873197399                         
+J1713+0747_Rcvr1_2_GASP_log10_tnequad:Constant=-7.423897862687164                         
+J1713+0747_Rcvr1_2_GUPPI_log10_tnequad:Constant=-8.357193830632392                        
+J1713+0747_Rcvr_800_GASP_log10_tnequad:Constant=-7.251839650442933                        
+J1713+0747_Rcvr_800_GUPPI_log10_tnequad:Constant=-7.614933520652966                       
+J1713+0747_S-wide_ASP_log10_tnequad:Constant=-8.027710747783962                           
+J1713+0747_S-wide_PUPPI_log10_tnequad:Constant=-8.186781270775445                         
+__________________________________________________________________________________________
+J1713+0747_ecorr_sherman-morrison        EcorrKernelNoise               0                   
+
+params:
+J1713+0747_L-wide_ASP_log10_ecorr:Constant=-7.029000061406403                             
+J1713+0747_L-wide_PUPPI_log10_ecorr:Constant=-7.142663306094692                           
+J1713+0747_Rcvr1_2_GASP_log10_ecorr:Constant=-7.299970815145262                           
+J1713+0747_Rcvr1_2_GUPPI_log10_ecorr:Constant=-7.131010248150742                          
+J1713+0747_Rcvr_800_GASP_log10_ecorr:Constant=-7.788837849013025                          
+J1713+0747_Rcvr_800_GUPPI_log10_ecorr:Constant=-6.730867845961182                         
+J1713+0747_S-wide_ASP_log10_ecorr:Constant=-6.876597410265874                             
+J1713+0747_S-wide_PUPPI_log10_ecorr:Constant=-7.305157969602163                           
+__________________________________________________________________________________________
+==========================================================================================
+Total params: 28
+Varying params: 3
+Common params: 1
+Fixed params: 25
+Number of pulsars: 1
+==========================================================================================
+

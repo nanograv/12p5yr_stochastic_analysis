@@ -2,7 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-/chains_mortimer/
 
 # mac filesystem
 .DS_Store
@@ -136,8 +135,7 @@ dmypy.json
 .pyre/
 
 # downloaded chains
-/downloaded_chains
-/chains/downloaded_chains
+/tutorials/chains/downloaded_chains
 
 # Figures
 Figure1.png
@@ -146,7 +144,3 @@ Figure2.png
 # pickle files
 psrs.pkl
 
-# backup chains / sampling scripts
-backup*
-/sampling_scripts/
-/tutorials/output/
