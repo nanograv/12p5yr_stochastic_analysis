@@ -136,6 +136,7 @@ dmypy.json
 
 # downloaded chains
 /tutorials/chains/downloaded_chains
+/tutorials/chains/extensions_chains/chain_1.txt
 
 # Figures
 Figure1.png
