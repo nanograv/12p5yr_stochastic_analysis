@@ -108,7 +108,6 @@ def matplotsettings():
             'font.family': 'serif',
             'font.serif':'Times',
             'text.latex.preamble': [r'\usepackage{amsmath}'],
-            'text.usetex':True,
             'figure.figsize': figsize(0.5)}
 
     plt.rcParams.update(params)

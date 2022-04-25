@@ -14,7 +14,7 @@
 
 1. Install Miniconda
 
-	* Either...download and install the relevant Miniforge file from here: https://docs.conda.io/en/latest/miniconda.html
+	* Either...download and install the relevant Miniforge file from here: https://github.com/conda-forge/miniforge
 	* OR... use Terminal command line installation
 		* Download the right one for your architecture
 			* Mac: `wget -q https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh`
