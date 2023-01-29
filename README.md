@@ -1,5 +1,5 @@
 # NANOGrav_12yr_tutorial <img align="right" width="150" height="100" src="https://github.com/nanograv/12p5yr_stochastic_analysis/blob/master/nanograv.png?raw=true">
-## Tutorial to go with the [12.5 year GWB analysis](https://arxiv.org/abs/2009.04496)
+## Tutorial to go with the [12.5 year isotropic GWB analysis](https://arxiv.org/abs/2009.04496)
 
 [![Generic badge](https://img.shields.io/badge/Created%20by-NANOGrav-red)](http://nanograv.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -23,14 +23,16 @@
 			* Linux: `wget -q https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh`
         * `bash Miniforge3-Linux-x86_64.sh -b`
 		    * `rm Miniforge3-Linux-x86_64.sh` (careful with “rm”)
-      * `enterprise` dependencies do not currently support Windows or M1 Macs
+      * `enterprise` dependencies do not currently support Windows or M1 Macs natively
 
-2. To install a new environment: `conda create -n enterprise enterprise_extensions la_forge`
+2. To install a new environment: `conda create -n enterprise_extensions la_forge`
+
   * Note: if you use Miniconda or Anaconda instead of Miniforge, you will need to use `conda create -n enterprise -c conda-forge enterprise_extensions la_forge`
+  * M1 Macs can make a conda environment and install `enterprise` by first following the instructions [here](https://conda-forge.org/docs/user/tipsandtricks.html#installing-apple-intel-packages-on-apple-silicon)
 
 3. This will create a conda environment that can be activated by `conda activate enterprise`
 
-6. Open a `jupyter notebook`
+6. Next run `jupyter notebook`
 
 7. Set the Kernel
 
@@ -40,11 +42,15 @@
 
 ## Tutorials
 
-  These tutorials are split into several different files. General topics are shown below.
+  These tutorials are split into several different files. The topic of each tutorial is shown below. These are roughly in the order that they should be viewed in to get a complete picture of how our isotropic GWB analysis is performed in NANOGrav.
+
+### Exploring NANOGrav Data
+
+  NANOGrav uses data files that may be unfamiliar to users that are new to pulsar timing or data analysis. Here, we investigate what information exists inside each `par` and `tim` file, how to load them into `enterprise`, and what information `enterprise` can use.
 
 ### Single Pulsar GWB Analysis
 
-  This tutorial is meant to be a quick introduction for those who don't have time to run the computations required in the full pulsar timing array (PTA) gravitational wave background (GWB) analysis. We go through the Bayesian analysis of `J1909` and `J1713`. These are two of the longest timed pulsars in the NANOGrav data set. One of the pulsars supports a common red process, while the other does not.
+  This tutorial is meant to be a quick introduction to one of the simplest analyses we can perform. We go through the Bayesian red noise analysis of `J1909` and `J1713`. These are two of the longest timed pulsars in the NANOGrav data set. One of the pulsars supports a common red process, while the other does not.
 
 ### White Noise Single Pulsar Analysis
 
@@ -57,3 +63,13 @@
 ### Optimal Statistic Analysis
 	
   This tutorial gives an introduction to frequentist methods we can use to look for the stochastic gravitational-wave background. It calculates the optimal statistic using the maximum likelihood noise parameters and also the noise marginalized optimal statistic using the noise parameter posteriors from a Bayesian analysis. It reproduces Figure 4 and 5 of the stochastic background paper.
+
+
+## Data
+
+  Output from NANOGrav analyses include chain files from PTMCMCSampler. These files contain samples of the posterior that tell us information about the parameters that go into our models.
+
+### Download NANOGrav Data Products
+
+  This file helps download the data products that are output by our sampler and used in Bayesian post-processing and frequentist analyses. Further, we use these files to create plots that have been used in the NANOGrav 12.5 year GWB analysis paper.
+

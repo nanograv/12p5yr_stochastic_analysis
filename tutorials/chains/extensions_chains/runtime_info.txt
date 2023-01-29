@@ -8,7 +8,7 @@ enterprise_extensions v2.4.0
 model 0
 =========
 
-enterprise v3.3.1,  Python v3.9.12
+enterprise v3.3.2.dev17+g74b39cb,  Python v3.9.13
 ==========================================================================================
 
 Signal Name                              Signal Class                   no. Parameters      
