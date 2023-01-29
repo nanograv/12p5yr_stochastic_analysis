@@ -1,14 +1,15 @@
 system : Darwin
-node : Aarons-MacBook-Pro.local
-release : 21.3.0
-version : Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_ARM64_T6000
+node : aaron
+release : 22.1.0
+version : Darwin Kernel Version 22.1.0: Sun Oct  9 20:15:09 PDT 2022; root:xnu-8792.41.9~2/RELEASE_ARM64_T6000
 machine : x86_64
 
-enterprise_extensions v2.4.0
+enterprise_extensions v2.4.2
+PTMCMCSampler v2.1.1
 model 0
 =========
 
-enterprise v3.3.2.dev17+g74b39cb,  Python v3.9.13
+enterprise v3.3.2,  Python v3.9.13
 ==========================================================================================
 
 Signal Name                              Signal Class                   no. Parameters      
@@ -23,7 +24,7 @@ params:
 B1855+09_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                    
 B1855+09_red_noise_gamma:Uniform(pmin=0, pmax=7)                                          
 __________________________________________________________________________________________
-B1855+09_gw                              FourierBasisGP                 1                   
+B1855+09_gw                              FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -63,7 +64,7 @@ params:
 B1937+21_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                    
 B1937+21_red_noise_gamma:Uniform(pmin=0, pmax=7)                                          
 __________________________________________________________________________________________
-B1937+21_gw                              FourierBasisGP                 1                   
+B1937+21_gw                              FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -115,7 +116,7 @@ params:
 B1953+29_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                    
 B1953+29_red_noise_gamma:Uniform(pmin=0, pmax=7)                                          
 __________________________________________________________________________________________
-B1953+29_gw                              FourierBasisGP                 1                   
+B1953+29_gw                              FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -155,7 +156,7 @@ params:
 J0023+0923_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J0023+0923_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J0023+0923_gw                            FourierBasisGP                 1                   
+J0023+0923_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -195,7 +196,7 @@ params:
 J0030+0451_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J0030+0451_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J0030+0451_gw                            FourierBasisGP                 1                   
+J0030+0451_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -238,7 +239,7 @@ params:
 J0340+4130_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J0340+4130_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J0340+4130_gw                            FourierBasisGP                 1                   
+J0340+4130_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -272,7 +273,7 @@ params:
 J0613-0200_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J0613-0200_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J0613-0200_gw                            FourierBasisGP                 1                   
+J0613-0200_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -312,7 +313,7 @@ params:
 J0636+5128_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J0636+5128_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J0636+5128_gw                            FourierBasisGP                 1                   
+J0636+5128_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -346,7 +347,7 @@ params:
 J0645+5158_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J0645+5158_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J0645+5158_gw                            FourierBasisGP                 1                   
+J0645+5158_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -380,7 +381,7 @@ params:
 J0740+6620_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J0740+6620_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J0740+6620_gw                            FourierBasisGP                 1                   
+J0740+6620_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -414,7 +415,7 @@ params:
 J0931-1902_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J0931-1902_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J0931-1902_gw                            FourierBasisGP                 1                   
+J0931-1902_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -448,7 +449,7 @@ params:
 J1012+5307_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1012+5307_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1012+5307_gw                            FourierBasisGP                 1                   
+J1012+5307_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -488,7 +489,7 @@ params:
 J1024-0719_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1024-0719_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1024-0719_gw                            FourierBasisGP                 1                   
+J1024-0719_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -528,7 +529,7 @@ params:
 J1125+7819_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1125+7819_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1125+7819_gw                            FourierBasisGP                 1                   
+J1125+7819_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -562,7 +563,7 @@ params:
 J1453+1902_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1453+1902_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1453+1902_gw                            FourierBasisGP                 1                   
+J1453+1902_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -596,7 +597,7 @@ params:
 J1455-3330_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1455-3330_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1455-3330_gw                            FourierBasisGP                 1                   
+J1455-3330_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -636,7 +637,7 @@ params:
 J1600-3053_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1600-3053_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1600-3053_gw                            FourierBasisGP                 1                   
+J1600-3053_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -676,7 +677,7 @@ params:
 J1614-2230_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1614-2230_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1614-2230_gw                            FourierBasisGP                 1                   
+J1614-2230_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -716,7 +717,7 @@ params:
 J1640+2224_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1640+2224_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1640+2224_gw                            FourierBasisGP                 1                   
+J1640+2224_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -756,7 +757,7 @@ params:
 J1643-1224_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1643-1224_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1643-1224_gw                            FourierBasisGP                 1                   
+J1643-1224_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -796,7 +797,7 @@ params:
 J1713+0747_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1713+0747_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1713+0747_gw                            FourierBasisGP                 1                   
+J1713+0747_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -848,7 +849,7 @@ params:
 J1738+0333_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1738+0333_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1738+0333_gw                            FourierBasisGP                 1                   
+J1738+0333_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -888,7 +889,7 @@ params:
 J1741+1351_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1741+1351_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1741+1351_gw                            FourierBasisGP                 1                   
+J1741+1351_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -928,7 +929,7 @@ params:
 J1744-1134_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1744-1134_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1744-1134_gw                            FourierBasisGP                 1                   
+J1744-1134_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -968,7 +969,7 @@ params:
 J1747-4036_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1747-4036_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1747-4036_gw                            FourierBasisGP                 1                   
+J1747-4036_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1002,7 +1003,7 @@ params:
 J1832-0836_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1832-0836_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1832-0836_gw                            FourierBasisGP                 1                   
+J1832-0836_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1036,7 +1037,7 @@ params:
 J1853+1303_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1853+1303_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1853+1303_gw                            FourierBasisGP                 1                   
+J1853+1303_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1076,7 +1077,7 @@ params:
 J1903+0327_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1903+0327_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1903+0327_gw                            FourierBasisGP                 1                   
+J1903+0327_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1116,7 +1117,7 @@ params:
 J1909-3744_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1909-3744_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1909-3744_gw                            FourierBasisGP                 1                   
+J1909-3744_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1156,7 +1157,7 @@ params:
 J1910+1256_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1910+1256_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1910+1256_gw                            FourierBasisGP                 1                   
+J1910+1256_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1196,7 +1197,7 @@ params:
 J1911+1347_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1911+1347_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1911+1347_gw                            FourierBasisGP                 1                   
+J1911+1347_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1230,7 +1231,7 @@ params:
 J1918-0642_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1918-0642_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1918-0642_gw                            FourierBasisGP                 1                   
+J1918-0642_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1270,7 +1271,7 @@ params:
 J1923+2515_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1923+2515_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1923+2515_gw                            FourierBasisGP                 1                   
+J1923+2515_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1310,7 +1311,7 @@ params:
 J1944+0907_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J1944+0907_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J1944+0907_gw                            FourierBasisGP                 1                   
+J1944+0907_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1350,7 +1351,7 @@ params:
 J2010-1323_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2010-1323_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2010-1323_gw                            FourierBasisGP                 1                   
+J2010-1323_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1390,7 +1391,7 @@ params:
 J2017+0603_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2017+0603_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2017+0603_gw                            FourierBasisGP                 1                   
+J2017+0603_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1433,7 +1434,7 @@ params:
 J2033+1734_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2033+1734_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2033+1734_gw                            FourierBasisGP                 1                   
+J2033+1734_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1467,7 +1468,7 @@ params:
 J2043+1711_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2043+1711_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2043+1711_gw                            FourierBasisGP                 1                   
+J2043+1711_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1507,7 +1508,7 @@ params:
 J2145-0750_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2145-0750_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2145-0750_gw                            FourierBasisGP                 1                   
+J2145-0750_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1547,7 +1548,7 @@ params:
 J2214+3000_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2214+3000_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2214+3000_gw                            FourierBasisGP                 1                   
+J2214+3000_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1587,7 +1588,7 @@ params:
 J2229+2643_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2229+2643_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2229+2643_gw                            FourierBasisGP                 1                   
+J2229+2643_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1621,7 +1622,7 @@ params:
 J2234+0611_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2234+0611_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2234+0611_gw                            FourierBasisGP                 1                   
+J2234+0611_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1655,7 +1656,7 @@ params:
 J2234+0944_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2234+0944_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2234+0944_gw                            FourierBasisGP                 1                   
+J2234+0944_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1689,7 +1690,7 @@ params:
 J2302+4442_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2302+4442_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2302+4442_gw                            FourierBasisGP                 1                   
+J2302+4442_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    
@@ -1723,7 +1724,7 @@ params:
 J2317+1439_red_noise_log10_A:Uniform(pmin=-20, pmax=-11)                                  
 J2317+1439_red_noise_gamma:Uniform(pmin=0, pmax=7)                                        
 __________________________________________________________________________________________
-J2317+1439_gw                            FourierBasisGP                 1                   
+J2317+1439_gw                            FourierBasisCommonGP           1                   
 
 params:
 gw_log10_A:Uniform(pmin=-18, pmax=-14)                                                    

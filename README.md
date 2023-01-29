@@ -50,26 +50,21 @@
 
 ### Single Pulsar GWB Analysis
 
-  This tutorial is meant to be a quick introduction to one of the simplest analyses we can perform. We go through the Bayesian red noise analysis of `J1909` and `J1713`. These are two of the longest timed pulsars in the NANOGrav data set. One of the pulsars supports a common red process, while the other does not.
+  This tutorial is meant to be a quick introduction to one of the simplest analyses we can perform. We go through the Bayesian red noise analysis of `J1909` and `J1713`. These are two of the longest timed pulsars in the NANOGrav data set. One of the pulsars supports a common red process at spectral indices that are indicative of gravitational waves from a population of supermassive black hole binaries, while the other does not.
 
 ### White Noise Single Pulsar Analysis
 
-  Here we go through the Bayesian analysis of white noise on a single pulsar. This is done for every pulsar in the NANOGrav data set to find the most likely values of each white noise parameter. White noise parameters are then set to their maximum posterior values in the full GWB analysis to reduce the number of parameters required for a full analysis.
+  Here we go through the Bayesian analysis of white noise on a single pulsar. This is done for every pulsar in the NANOGrav data set to find the maximum marginalized posterior values of each white noise parameter. White noise parameters are then set to their maximum posterior values in the GWB analysis to reduce the number of parameters required from ~600 to ~90.
 
 ### PTA GWB Analysis
   
-  In this tutorial, we work through the Bayesian analysis of a subset of pulsars in the NANOGrav data set (those timed for more than 6 years). After going through a generalized process of the single pulsar GWB analysis, we show how to compare models and compute Bayes factors.
+  This tutorial is split into two files, one for parameter estimation and one for model selection. We work through the Bayesian analysis of the full NANOGrav 12.5 year data to show what values each of the searched-over parameters prefers. After going through a generalized process of the single pulsar GWB analysis, we show how to compare models and compute Bayes factors. Figures 1 and 2 from the 12.5 year GWB search paper are reproduced in a separate file.
 
 ### Optimal Statistic Analysis
 	
-  This tutorial gives an introduction to frequentist methods we can use to look for the stochastic gravitational-wave background. It calculates the optimal statistic using the maximum likelihood noise parameters and also the noise marginalized optimal statistic using the noise parameter posteriors from a Bayesian analysis. It reproduces Figure 4 and 5 of the stochastic background paper.
+  This tutorial gives an introduction to frequentist methods we can use to look for the stochastic gravitational-wave background. It calculates the optimal statistic using the maximum likelihood noise parameters and also the noise marginalized optimal statistic using the parameter posteriors from a Bayesian analysis. It reproduces Figure 4 and 5 of the stochastic background paper.
 
+### Data Download
 
-## Data
-
-  Output from NANOGrav analyses include chain files from PTMCMCSampler. These files contain samples of the posterior that tell us information about the parameters that go into our models.
-
-### Download NANOGrav Data Products
-
-  This file helps download the data products that are output by our sampler and used in Bayesian post-processing and frequentist analyses. Further, we use these files to create plots that have been used in the NANOGrav 12.5 year GWB analysis paper.
+  Output from NANOGrav analyses include chain files from PTMCMCSampler. These files contain samples of the posterior that tell us information about the parameters that go into our models. This file downloads the data products that are output by our sampler and used in Bayesian post-processing and frequentist analyses. 
 

@@ -1,14 +1,15 @@
 system : Darwin
-node : Aarons-MBP.attlocal.net
-release : 21.3.0
-version : Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_ARM64_T6000
+node : aaron
+release : 22.1.0
+version : Darwin Kernel Version 22.1.0: Sun Oct  9 20:15:09 PDT 2022; root:xnu-8792.41.9~2/RELEASE_ARM64_T6000
 machine : x86_64
 
-enterprise_extensions v2.4.0
+enterprise_extensions v2.4.2
+PTMCMCSampler v2.1.1
 model 0
 =========
 
-enterprise v3.3.1,  Python v3.9.12
+enterprise v3.3.2,  Python v3.9.13
 ==========================================================================================
 
 Signal Name                              Signal Class                   no. Parameters      
@@ -1497,7 +1498,7 @@ Number of pulsars: 45
 model 1
 =========
 
-enterprise v3.3.1,  Python v3.9.12
+enterprise v3.3.2,  Python v3.9.13
 ==========================================================================================
 
 Signal Name                              Signal Class                   no. Parameters      
