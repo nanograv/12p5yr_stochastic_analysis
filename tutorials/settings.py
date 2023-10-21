@@ -107,7 +107,6 @@ def matplotsettings():
             'path.simplify':True,
             'font.family': 'serif',
             'font.serif':'Times',
-            'text.latex.preamble': [r'\usepackage{amsmath}'],
             'figure.figsize': figsize(0.5)}
-
+    plt.rc('text.latex', preamble=r'\usepackage{amsmath}')
     plt.rcParams.update(params)
