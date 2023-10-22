@@ -6,7 +6,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Generic badge](https://img.shields.io/twitter/follow/NANOGrav?style=social)](https://twitter.com/NANOGrav)
  
- Authors: [Stephen Taylor](http://stevertaylor.github.io/), [Sarah Vigeland](https://github.com/svigeland), Joe Simon, [Bence Becsy](https://github.com/bencebecsy) and [Aaron Johnson](https://github.com/AaronDJohnson) for the [NANOGrav Collaboration](https://github.com/nanograv)
+ Authors: [Aaron Johnson](https://github.com/AaronDJohnson), [Bence Becsy](https://github.com/bencebecsy), [Stephen Taylor](http://stevertaylor.github.io/), [Sarah Vigeland](https://github.com/svigeland), and Joe Simon for the [NANOGrav Collaboration](https://github.com/nanograv)
 
  Please send questions about this tutorial to `aaron.johnson (at) nanograv.org`
 
@@ -27,12 +27,12 @@
 
 2. To install a new environment: `conda create -n enterprise_extensions la_forge`
 
-  * Note: if you use Miniconda or Anaconda instead of Miniforge, you will need to use `conda create -n enterprise -c conda-forge enterprise_extensions la_forge`
+  * Note: if you use Miniconda or Anaconda instead of Miniforge, you will need to use `conda create -n enterprise -c conda-forge enterprise_extensions la_forge jupyterlab`
   * M1 Macs can make a conda environment and install `enterprise` by first following the instructions [here](https://conda-forge.org/docs/user/tipsandtricks.html#installing-apple-intel-packages-on-apple-silicon)
 
 3. This will create a conda environment that can be activated by `conda activate enterprise`
 
-6. Next run `jupyter notebook`
+6. Next run `jupyter lab`
 
 7. Set the Kernel
 
