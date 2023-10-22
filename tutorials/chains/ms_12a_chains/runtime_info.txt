@@ -1,15 +1,16 @@
 system : Darwin
 node : aaron
-release : 22.1.0
-version : Darwin Kernel Version 22.1.0: Sun Oct  9 20:15:09 PDT 2022; root:xnu-8792.41.9~2/RELEASE_ARM64_T6000
+release : 22.6.0
+version : Darwin Kernel Version 22.6.0: Wed Jul  5 22:22:05 PDT 2023; root:xnu-8796.141.3~6/RELEASE_ARM64_T6000
 machine : x86_64
+processor : i386
 
 enterprise_extensions v2.4.2
 PTMCMCSampler v2.1.1
 model 0
 =========
 
-enterprise v3.3.2,  Python v3.9.13
+enterprise v3.3.2,  Python v3.10.12
 ==========================================================================================
 
 Signal Name                              Signal Class                   no. Parameters      
@@ -1498,7 +1499,7 @@ Number of pulsars: 45
 model 1
 =========
 
-enterprise v3.3.2,  Python v3.9.13
+enterprise v3.3.2,  Python v3.10.12
 ==========================================================================================
 
 Signal Name                              Signal Class                   no. Parameters      
