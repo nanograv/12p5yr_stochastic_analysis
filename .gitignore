@@ -6,6 +6,9 @@ __pycache__/
 # mac filesystem
 .DS_Store
 
+# VSCode
+.vscode
+
 # C extensions
 *.so
 
@@ -132,9 +135,18 @@ dmypy.json
 .pyre/
 
 # downloaded chains
-/downloaded_chains
-/chains*
+/tutorials/chains/downloaded_chains
+/tutorials/chains/extensions_chains/chain_1.txt
 
 # Figures
 Figure1.png
 Figure2.png
+
+# pickle files
+psrs.pkl
+
+*chain_1.txt
+*runtime_info.txt
+*chains_test/
+*sngl_gwb_1713/
+*sngl_gwb_1909/
