@@ -105,8 +105,6 @@ def matplotsettings():
             'ytick.labelsize': 10,
             'savefig.dpi':200,
             'path.simplify':True,
-            'font.family': 'serif',
-            'font.serif':'Times',
             'figure.figsize': figsize(0.5)}
     plt.rc('text.latex', preamble=r'\usepackage{amsmath}')
     plt.rcParams.update(params)
